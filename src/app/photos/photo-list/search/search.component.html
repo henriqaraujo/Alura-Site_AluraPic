@@ -1,0 +1,9 @@
+<div class="text-center mt-3 mb-3">
+    <form>
+        <i aria-hiddern="true" class="fa fa-search mr-2"></i>
+        <input class="rounded" #buscaDescricao type="search" placeholder="search..." autofocus (keyup)="debounce.next(buscaDescricao.value)" [value]="value">
+        <!--com o keyup, pegamos o valor do input que esta sendo inserido no search e jogando na propriedade filter-->
+        <!--EventBind – colocamos o nome entre parentes e então ele a avalia a expressão que esta dentro do 
+            Evento e então ela pega o valor que esta no Evento e coloca dentro da propriedade Filter.-->
+    </form>
+</div>
